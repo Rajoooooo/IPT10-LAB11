@@ -17,7 +17,6 @@
                 <th>Course Name</th>
                 <th>Number of Enrollees</th>
                 <th>Enrolled Student</th>
-                
             </tr>
         </thead>
         <tbody>
@@ -27,7 +26,7 @@
                 <td>{{course_name}}</td>
                 <td>{{enrollees_count}}</td>
                 <td>
-                    <a href="/course/view/{{course_code}}" class="btn btn-primary">View Course</a>
+                    <a href="/courses/{{course_code}}" class="btn btn-primary">View Course</a>
                 </td>
             </tr>
             {{/items}}
@@ -37,7 +36,7 @@
 
 <ul class="nav">
     <li class="nav-item">
-        <a class="nav-link" href="/enrollment-form">Enroll Student </a>
+        <a class="nav-link" href="/enrollment-form">Enroll Student</a>
         <a class="nav-link" href="/students">Student List</a>
     </li>
 </ul>
