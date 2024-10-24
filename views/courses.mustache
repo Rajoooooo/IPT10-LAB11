@@ -16,7 +16,7 @@
                 <th>Course Code</th>
                 <th>Course Name</th>
                 <th>Number of Enrollees</th>
-                <th>Enrolled Student</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +27,7 @@
                 <td>{{enrollees_count}}</td>
                 <td>
                     <a href="/courses/{{course_code}}" class="btn btn-primary">View Course</a>
+                    <a href="/export-course/{{course_code}}" class="btn btn-danger">Export to PDF</a>
                 </td>
             </tr>
             {{/items}}
